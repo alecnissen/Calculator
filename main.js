@@ -50,4 +50,26 @@ function divide(input1,... input2) {
 //     result = s1 / s2; 
 // }
 //     return result; 
-// } 
+// }  
+
+// create a new function called operate 
+// takes an operator (+, -, *, / ) 
+// takes in 2 numbers 
+// calls the operation functions to calculate final result 
+
+function operate(num1, num2, operator) { 
+    if (operator === '+') { 
+        add(); 
+        return num1 + num2; 
+    } else if (operator === '-') { 
+        subtract(); 
+        return num1 - num2; 
+    } else if (operator === '*') { 
+        multiply(); 
+        return num1 * num2; 
+    } else if (operator === '/') { 
+        divide(); 
+        return num1 / num2; 
+    } 
+}
+
