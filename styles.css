@@ -1,11 +1,60 @@
  .main-container-calc { 
-    display: inline-block;
-    background-color: grey;  
-}  
+    /* display: inline-block; */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: grey; 
+    width: 30em;
+    height: 35em;  
+    border: 5px solid black;
+}   
+
+/* .output-container { 
+    background-color: grey;   
+    border: 5px solid black;
+} */
+
 
 .output-field { 
-    padding: 10px;
+    padding: 20px;
     border: 1px solid black; 
     background-color: wheat; 
     
+}  
+
+.clear-btn {  
+    height: 50px; 
+    width: 200px; 
+    font-size: 30px;
 } 
+
+.delete-btn { 
+    height: 50px; 
+    width: 200px; 
+    font-size: 30px;
+} 
+
+.first-row-btn {      
+    height: 85px; 
+    width: 98px; 
+    font-size: 30px;
+} 
+
+.second-row-btn { 
+    height: 85px; 
+    width: 98px; 
+    font-size: 30px;
+} 
+
+.third-row-button { 
+    height: 85px; 
+    width: 98px; 
+    font-size: 30px;
+} 
+
+
+.fourth-row-button { 
+    height: 85px; 
+    width: 98px; 
+    font-size: 30px;
+}
