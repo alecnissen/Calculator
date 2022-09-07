@@ -12,13 +12,13 @@ function add(...nums) {
 
 
 function subtract(...nums) { 
-    let total = 0; 
+    // let total = 0; 
 
     for (let i = 0; i < nums.length; i++) { 
-        let num = nums[i]; 
-        total =- num; 
+        let num1 = nums[i]; 
+        let num2 = nums[i + 1]; 
+        return num1 - num2;  
     }
-    return total; 
 } 
 
 
@@ -117,7 +117,7 @@ let divideBtn = document.getElementById('divide-btn');
 divideBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '÷'  
+    output.textContent += '÷'  
 
     storeOperatorValue = '÷' 
 }) 
@@ -158,9 +158,9 @@ let multiplyBtn = document.getElementById('multiply-btn');
 multiplyBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = 'X'  
+    output.textContent += '*' 
 
-    storeOperatorValue = 'X' 
+    storeOperatorValue = '*' 
 })  
 
 let oneBtn = document.getElementById('one-btn'); 
@@ -198,7 +198,7 @@ let subtractBtn = document.getElementById('subtract-btn');
 subtractBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '-'  
+    output.textContent += '-'  
 
     storeOperatorValue = '-' 
 }) 
@@ -208,7 +208,7 @@ periodBtn = document.getElementById('period-btn');
 periodBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '.'  
+    output.textContent += '.'  
 
     storeDisplayValue = '.' 
 }) 
@@ -238,7 +238,7 @@ additionBtn = document.getElementById('addition-btn');
 additionBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '+'  
+    output.textContent += '+'  
 
     storeOperatorValue = '+' 
 }) 
