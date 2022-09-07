@@ -85,7 +85,7 @@ let sevenBtn = document.getElementById('seven-btn');
 sevenBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '7';  
+    output.textContent += '7';  
 
     storeDisplayValue = '7'; 
 })
@@ -96,7 +96,7 @@ let eightBtn = document.getElementById('eight-btn');
 eightBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '8';  
+    output.textContent += '8';  
 
     storeDisplayValue = '8'; 
 }) 
@@ -106,7 +106,7 @@ let nineBtn = document.getElementById('nine-btn');
 nineBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '9';  
+    output.textContent += '9';  
 
     storeDisplayValue = '9'; 
 }) 
@@ -128,7 +128,7 @@ let fourBtn = document.getElementById('four-btn');
 fourBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '4'  
+    output.textContent += '4'  
 
     storeDisplayValue = '4' 
 })  
@@ -138,7 +138,7 @@ let fiveBtn = document.getElementById('five-btn');
 fiveBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '5'  
+    output.textContent += '5'  
 
     storeDisplayValue = '5' 
 })  
@@ -148,7 +148,7 @@ let sixBtn = document.getElementById('six-btn');
 sixBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '6'  
+    output.textContent += '6'  
 
     storeDisplayValue = '6' 
 }) 
@@ -168,7 +168,7 @@ let oneBtn = document.getElementById('one-btn');
 oneBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '1'  
+    output.textContent += '1'  
 
     storeDisplayValue = '1' 
 })  
@@ -178,7 +178,7 @@ let twoBtn = document.getElementById('two-btn');
 twoBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '2'  
+    output.textContent += '2'  
 
     storeDisplayValue = '2' 
 })  
@@ -188,7 +188,7 @@ let threeBtn = document.getElementById('three-btn');
 threeBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '3'  
+    output.textContent += '3'  
 
     storeDisplayValue = '3' 
 }) 
@@ -218,7 +218,7 @@ zeroBtn = document.getElementById('zero-btn');
 zeroBtn.addEventListener('click', e => { 
     let output = document.getElementById('output'); 
 
-    output.textContent = '0'  
+    output.textContent += '0'  
 
     storeDisplayValue = '0' 
 }) 
