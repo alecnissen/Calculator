@@ -90,7 +90,37 @@ text-align: right;
 } 
 
 .button-containers { 
-    margin-top: 25px; 
+ margin-top: 25px;  
 } 
-    
+
+.clear-delete-btn-container { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+} 
+
+.first-row-btn-container { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+}
+     
+
+.second-row-btn-container { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+} 
+
+.third-row-button-container { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+} 
+
+.fourth-row-button-container { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+}
 
