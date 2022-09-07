@@ -1,55 +1,84 @@
  .main-container-calc { 
-    /* display: inline-block; */ 
-    display: flex; 
-    justify-content: center; 
+    /* display: inline-block;  */
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start; 
     align-items: center; 
     background-color: grey; 
-    width: 30em;
-    height: 35em;  
-    border: 5px solid black;
+    width: 28em;
+    height: 32em;  
+    border: 15px solid black;
+    border-radius: 5%;
 }   
 
 /* .output-container { 
     background-color: grey;   
     border: 5px solid black;
-} */
+
+}
 
 
 .output-field { 
     padding: 20px;
     border: 1px solid black; 
     background-color: wheat; 
-    
-}  
+}   */ 
+
+
+/* /* .output { 
+    position: absolute;
+/* z-index: 999; */ 
+
+
+
+
+.output-container { 
+display: flex; 
+justify-content: flex-end;  
+align-content: flex-start;
+background-color: rgb(230, 214, 214);
+padding: 20px; 
+text-align: right;
+/* border-radius: 7%;  */
+ /* position: relative; */
+ border: 5px solid black; 
+ width: 80%; 
+/* width: 25em;  */
+}
 
 .clear-btn {  
     height: 50px; 
     width: 200px; 
-    font-size: 30px;
-} 
+    font-size: 30px; 
+    border: 5px solid black; 
+}  
 
 .delete-btn { 
     height: 50px; 
     width: 200px; 
-    font-size: 30px;
+    font-size: 30px; 
+    border: 5px solid black; 
 } 
 
 .first-row-btn {      
     height: 85px; 
     width: 98px; 
-    font-size: 30px;
+    font-size: 30px; 
+    border: 5px solid black; 
 } 
 
 .second-row-btn { 
     height: 85px; 
     width: 98px; 
-    font-size: 30px;
+    font-size: 30px; 
+    border: 5px solid black; 
 } 
 
 .third-row-button { 
     height: 85px; 
     width: 98px; 
-    font-size: 30px;
+    font-size: 30px; 
+    border: 5px solid black; 
 } 
 
 
@@ -57,4 +86,11 @@
     height: 85px; 
     width: 98px; 
     font-size: 30px;
-}
+    border: 5px solid black; 
+} 
+
+.button-containers { 
+    margin-top: 25px; 
+} 
+    
+
