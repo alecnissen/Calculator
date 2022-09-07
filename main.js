@@ -71,5 +71,178 @@ function operate(num1, num2, operator) {
         divide(); 
         return num1 / num2; 
     } 
-}
+} 
+
+// global variable to hold the display value  
+let storeDisplayValue = ''; 
+
+let storeOperatorValue = ''; 
+
+// event listener for 7 
+
+let sevenBtn = document.getElementById('seven-btn'); 
+
+sevenBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '7';  
+
+    storeDisplayValue = '7'; 
+})
+
+// event listener for 8 
+let eightBtn = document.getElementById('eight-btn'); 
+
+eightBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '8';  
+
+    storeDisplayValue = '8'; 
+}) 
+// 9 
+let nineBtn = document.getElementById('nine-btn'); 
+
+nineBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '9';  
+
+    storeDisplayValue = '9'; 
+}) 
+
+// divide  
+let divideBtn = document.getElementById('divide-btn'); 
+
+divideBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '÷'  
+
+    storeOperatorValue = '÷' 
+}) 
+
+// four 
+let fourBtn = document.getElementById('four-btn'); 
+
+fourBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '4'  
+
+    storeDisplayValue = '4' 
+})  
+
+let fiveBtn = document.getElementById('five-btn'); 
+
+fiveBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '5'  
+
+    storeDisplayValue = '5' 
+})  
+
+let sixBtn = document.getElementById('six-btn'); 
+
+sixBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '6'  
+
+    storeDisplayValue = '6' 
+}) 
+
+let multiplyBtn = document.getElementById('multiply-btn'); 
+
+multiplyBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = 'X'  
+
+    storeOperatorValue = 'X' 
+})  
+
+let oneBtn = document.getElementById('one-btn'); 
+
+oneBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '1'  
+
+    storeDisplayValue = '1' 
+})  
+
+let twoBtn = document.getElementById('two-btn'); 
+
+twoBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '2'  
+
+    storeDisplayValue = '2' 
+})  
+
+let threeBtn = document.getElementById('three-btn'); 
+
+threeBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '3'  
+
+    storeDisplayValue = '3' 
+}) 
+
+let subtractBtn = document.getElementById('subtract-btn'); 
+
+subtractBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '-'  
+
+    storeOperatorValue = '-' 
+}) 
+
+periodBtn = document.getElementById('period-btn'); 
+
+periodBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '.'  
+
+    storeDisplayValue = '.' 
+}) 
+
+zeroBtn = document.getElementById('zero-btn'); 
+
+zeroBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '0'  
+
+    storeDisplayValue = '0' 
+}) 
+
+equalsBtn = document.getElementById('equals-btn'); 
+
+equalsBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '='  
+
+    storeOperatorValue = '=' 
+}) 
+
+additionBtn = document.getElementById('addition-btn'); 
+
+additionBtn.addEventListener('click', e => { 
+    let output = document.getElementById('output'); 
+
+    output.textContent = '+'  
+
+    storeOperatorValue = '+' 
+}) 
+
+
+
 
