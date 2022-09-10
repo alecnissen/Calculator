@@ -84,16 +84,19 @@ function divide(...nums) {
 
 function operate(num1, num2, op) { 
     if (op === '+') { 
-       return add(num1, num2, op); 
+       return add(num1, num2); 
+       
         
-    } else if (op === '-') { 
-       return subtract(num1, num2, op); 
+    } else if (op === '-') {    
+       return subtract(num1, num2); 
+       
         
     } else if (op === '*') { 
-        return multiply(num1, num2, op); 
+        return multiply(num1, num2); 
+        
          
     } else if (op === '÷') { 
-        return divide(num1, num2, op); 
+        return divide(num1, num2);   
      } 
 } 
 
@@ -285,12 +288,13 @@ zeroBtn.addEventListener('click', e => {
   updateDOM();
 }) 
 
+let result = 0; 
 
 equalsBtn = document.getElementById('equals-btn'); 
 
 equalsBtn.addEventListener('click', e => {  
   
-   let result = operate(num1, num2, op); 
+   result = operate(num1, num2, op); 
   
   output.textContent = result;  
   
