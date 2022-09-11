@@ -56,7 +56,7 @@ let sevenBtn = document.getElementById('seven-btn');
 
 sevenBtn.addEventListener('click', e => { 
   
-  if (num1 === '') {  
+  if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -67,12 +67,12 @@ sevenBtn.addEventListener('click', e => {
 }) 
 
 
-// event listener for 8 
+ 
 let eightBtn = document.getElementById('eight-btn'); 
 
 eightBtn.addEventListener('click', e => { 
   
-   if (num1 === '') {  
+   if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -80,12 +80,12 @@ eightBtn.addEventListener('click', e => {
   
   updateDOM(); 
 }) 
-// 9 
+
 let nineBtn = document.getElementById('nine-btn'); 
 
 nineBtn.addEventListener('click', e => { 
     
-    if (num1 === '') {  
+    if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -94,7 +94,7 @@ nineBtn.addEventListener('click', e => {
   updateDOM(); 
 }) 
 
-// divide  
+
 let divideBtn = document.getElementById('divide-btn'); 
 
 divideBtn.addEventListener('click', e => { 
@@ -106,12 +106,12 @@ divideBtn.addEventListener('click', e => {
 
 }) 
 
-// four 
+
 let fourBtn = document.getElementById('four-btn'); 
 
 fourBtn.addEventListener('click', e => { 
     
-    if (num1 === '') {  
+    if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -124,7 +124,7 @@ let fiveBtn = document.getElementById('five-btn');
 
 fiveBtn.addEventListener('click', e => { 
    
-     if (num1 === '') {  
+     if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -137,7 +137,7 @@ let sixBtn = document.getElementById('six-btn');
 
 sixBtn.addEventListener('click', e => { 
   
-      if (num1 === '') {  
+      if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -158,7 +158,7 @@ let oneBtn = document.getElementById('one-btn');
 
 oneBtn.addEventListener('click', e => { 
   
-     if (num1 === '') {  
+     if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -171,7 +171,7 @@ let twoBtn = document.getElementById('two-btn');
 
 twoBtn.addEventListener('click', e => { 
   
-    if (num1 === '') {  
+    if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -184,7 +184,7 @@ let threeBtn = document.getElementById('three-btn');
 
 threeBtn.addEventListener('click', e => { 
   
-    if (num1 === '') {  
+    if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -205,7 +205,7 @@ periodBtn = document.getElementById('period-btn');
 
 periodBtn.addEventListener('click', e => { 
   
-    if (num1 === '') {  
+    if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
@@ -218,7 +218,7 @@ zeroBtn = document.getElementById('zero-btn');
 
 zeroBtn.addEventListener('click', e => { 
   
-   if (num1 === '') {  
+   if (num1 === '' || op === '') {  
    num1 += e.target.textContent;
   } else { 
   num2 += e.target.textContent;    
