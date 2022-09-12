@@ -1,4 +1,20 @@
-function add(num1, num2) { 
+// I want to find a way to string multiple operators together and then get the result 
+// something to calculate the result 
+// something to update the result 
+// another function which you can call 
+// pass in an operator and a number 
+// calculates the result, appends that result to the container which is on the global scope 
+// 
+
+
+
+// function addToResult(op, num) { 
+    // if (op == + || - || * || /)
+//    
+
+
+
+function add(num1, num2, num3, num4) { 
     return Number(num1) + Number(num2); 
 }
 
@@ -20,7 +36,6 @@ function divide(num1, num2) {
 
 
 
-
 function operate(num1, num2, op) { 
     if (op === '+') { 
        return add(num1, num2); 
@@ -39,18 +54,25 @@ function operate(num1, num2, op) {
      } 
 } 
 
+
+// global variable to store the result 
+// let result = operate(num1, num2, op) 
+// result ${op}= ${num} 
+// output.textContent = result 
+
 // global variable to hold the display value  
 let output = document.getElementById('output'); 
 let num1 = ''; 
 let op = ''; 
 let num2 = ''; 
 
-function updateDOM() { 
-  output.textContent = `${num1} ${op} ${num2}`; 
-} 
+ function updateDOM() {  
+  output.textContent = `${num1} ${op} ${num2}`;   
 
-// num1 += e.target.textContent; 
-// event listener for 7 
+//   let result = operate(num1, num2, op); 
+ 
+}  
+
 
 let sevenBtn = document.getElementById('seven-btn'); 
 
@@ -235,13 +257,11 @@ equalsBtn.addEventListener('click', e => {
 
 
     let result = operate(num1, num2, op);  
+ 
     
-    
-  
-  output.textContent = `${result}`;  
+     output.textContent = `${result}`;   
 
-  
- }) 
+ })  
 
 additionBtn = document.getElementById('addition-btn'); 
 
@@ -252,6 +272,18 @@ additionBtn.addEventListener('click', e => {
 }) 
 
 
+
+
+
+let clearBtn = document.getElementById('clear-btn'); 
+
+clearBtn.addEventListener('click', e => { 
+    num1 = ''; 
+    num2 = ''; 
+    op = '';  
+
+    output.textContent = '';
+}); 
 
 
 
