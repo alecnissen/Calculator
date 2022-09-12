@@ -31,6 +31,10 @@ function multiply(num1, num2) {
 
 
 function divide(num1, num2) { 
+    if (num1 == 0 || num2 == 0) { 
+        return output.textContent = "NOPE! Can't divide by 0! You should know this! :D";  
+    }
+
     return num1 / num2; 
 }
 
@@ -259,7 +263,7 @@ equalsBtn.addEventListener('click', e => {
     let result = operate(num1, num2, op);  
  
     
-     output.textContent = `${result}`;   
+     output.textContent = result.toFixed(2);   
 
  })  
 
@@ -270,8 +274,6 @@ additionBtn.addEventListener('click', e => {
   
    updateDOM(); 
 }) 
-
-
 
 
 
