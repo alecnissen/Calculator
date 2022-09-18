@@ -94,7 +94,15 @@ let equalsBtn = document.getElementsByClassName('equals-btn');
 
 
 
+let clearBtn = document.getElementById('clear-btn'); 
 
+clearBtn.addEventListener('click', function clearBtn(e) { 
+    outputObj.currentNum1 = ''; 
+    outputObj.currentNum2 = ''; 
+    outputObj.operator = '';  
+
+    output.textContent = '';
+}); 
 
 
 
