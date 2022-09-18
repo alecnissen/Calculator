@@ -82,13 +82,22 @@ Array.from(operatorBtns).forEach(function(op) {
         if (outputObj.operator === '') { 
                 outputObj.operator = e.target.textContent; 
                 display(); 
-        } 
+        } else if (outputObj.operator !== '' && outputObj.currentNum2 !== '') { 
+            outputObj.currentNum1 = operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator);
+            outputObj.operator = e.target.textContent;
+            output.textContent = outputObj.currentNum1, outputObj.operator; 
+        }
     })
 }) 
 
-let equalsBtn = document.getElementsByClassName('equals-btn'); 
+let equalsBtn = document.getElementById('equals-btn'); 
 
-// equals function here, will evaluate pair results 
+equalsBtn.addEventListener('click', e => { 
+    outputObj.currentNum1 = operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator); 
+    output.textContent = outputObj.currentNum1; 
+    outputObj.currentNum2 = ''; 
+    outputObj.operator = ''; 
+}) 
 
 
 
@@ -103,6 +112,7 @@ clearBtn.addEventListener('click', function clearBtn(e) {
 
     output.textContent = '';
 }); 
+
 
 
 
