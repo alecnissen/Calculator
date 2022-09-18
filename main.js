@@ -83,17 +83,18 @@ Array.from(operatorBtns).forEach(function(op) {
                 outputObj.operator = e.target.textContent; 
                 display(); 
         } else if (outputObj.operator !== '' && outputObj.currentNum2 !== '') { 
-            outputObj.currentNum1 = operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator);
+            outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)); 
             outputObj.operator = e.target.textContent;
+            outputObj.currentNum2 = '';
             output.textContent = outputObj.currentNum1, outputObj.operator; 
-        }
+        } 
     })
 }) 
 
 let equalsBtn = document.getElementById('equals-btn'); 
 
 equalsBtn.addEventListener('click', e => { 
-    outputObj.currentNum1 = operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator); 
+    outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)); 
     output.textContent = outputObj.currentNum1; 
     outputObj.currentNum2 = ''; 
     outputObj.operator = ''; 
@@ -120,7 +121,7 @@ let deleteBtn = document.getElementById('delete-btn');
 
 deleteBtn.addEventListener('click', e => { 
     output.textContent = output.textContent.slice(0, -1).toString();  
-})
+})     
 
 
 
