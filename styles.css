@@ -8,8 +8,14 @@
     width: 28em;
     height: 32em;  
     border: 15px solid black;
-    border-radius: 5%;
+    border-radius: 5%; 
 }   
+
+.center-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
 
 /* .output-container { 
     background-color: grey;   

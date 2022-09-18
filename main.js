@@ -116,7 +116,11 @@ clearBtn.addEventListener('click', function clearBtn(e) {
 
 
 
+let deleteBtn = document.getElementById('delete-btn'); 
 
+deleteBtn.addEventListener('click', e => { 
+    output.textContent = output.textContent.slice(0, -1).toString();  
+})
 
 
 
