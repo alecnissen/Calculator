@@ -44,7 +44,7 @@ function operate(num1, num2, op) {
 
 
   
-let output = document.getElementById('output');    
+let output = document.getElementById('output');   
 
 let outputObj = { 
     currentNum1: '' ,
@@ -87,18 +87,27 @@ Array.from(operatorBtns).forEach(function(op) {
             outputObj.operator = e.target.textContent;
             outputObj.currentNum2 = '';
             output.textContent = outputObj.currentNum1, outputObj.operator; 
-        } 
+        }   
     })
 }) 
 
 let equalsBtn = document.getElementById('equals-btn'); 
 
 equalsBtn.addEventListener('click', e => { 
-    outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)); 
+    outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)).toString(); 
     output.textContent = outputObj.currentNum1; 
     outputObj.currentNum2 = ''; 
-    outputObj.operator = ''; 
-}) 
+    outputObj.operator = '';  
+    
+    if (outputObj.currentNum1 === '') {  
+        output.textContent = 'undefined';
+    } else if (outputObj.operator === '') { 
+        output.textContent = 'undefined'; 
+    } else if (outputObj.currentNum2 === '') { 
+        output.textContent = 'undefined'; 
+    } 
+    
+})  
 
 
 
@@ -120,8 +129,35 @@ clearBtn.addEventListener('click', function clearBtn(e) {
 let deleteBtn = document.getElementById('delete-btn'); 
 
 deleteBtn.addEventListener('click', e => { 
-    output.textContent = output.textContent.slice(0, -1).toString();  
-})     
+    if (outputObj.currentNum2 !== '') { 
+        outputObj.currentNum2 = outputObj.currentNum2.split('').slice(0, -1).join(''); 
+        display();  
+    } else if (outputObj.operator !== '') { 
+        outputObj.operator = ''; 
+        display(); 
+    } else if (outputObj.currentNum1 !== '') { 
+        outputObj.currentNum1 = outputObj.currentNum1.split('').slice(0, -1).join(''); 
+        display(); 
+    } 
+})         
+
+
+
+// e.tatg
+
+
+// deleteBtn.addEventListener('click', e => { 
+//     if (outputObj.currentNum2 !== '') { 
+//         outputObj.currentNum2 =  outputObj.currentNum2.split('').slice(0, -1).join(''); 
+//         display();  
+//     } else if (outputObj.operator !== '') { 
+//         outputObj.operator = ''; 
+//         display(); 
+//     } else if (outputObj.currentNum1 !== '') { 
+//         outputObj.currentNum1 = outputObj.currentNum1.split('').slice(0, -1).join(''); 
+//         display(); 
+//     } 
+// })   
 
 
 
@@ -130,11 +166,30 @@ deleteBtn.addEventListener('click', e => {
 
 
 
+// output.textContent = output.textContent.slice(0, -1).toString();  
+
+
+// outputObj.currentNum1 !== '' && outputObj.operator !== '' && outputObj.currentNum2 !== ''
 
 
 
 
+// Hey guys I am stuck on the final steps of calculator, couple of problems I am running into 
 
+// problem 1: Delete button is working but I cannot delete characters once the final result is displayed? 
+// I'm really confused on that because once both numbers are entered, I am setting the result to num1? 
+
+//Problem 2: If user presses = before entering all the numbers it should return undefined
+// I set up conditionals inside my equals function which checks if num1, num2 and op are empty, 
+// then print undefined in the output field, no luck 
+
+// What I've tried: For the delete button, I have tried using substring, remove, removeChild, 
+// delete the property from the obj, slice is the only thing that works 
+
+// For the = problem, I've tried putting all of them into one conditional instead of nested conditionals 
+//  no luck 
+
+// any help would be greatly appreciated 
 
 
 
