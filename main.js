@@ -94,10 +94,6 @@ Array.from(operatorBtns).forEach(function(op) {
 let equalsBtn = document.getElementById('equals-btn'); 
 
 equalsBtn.addEventListener('click', e => { 
-    outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)).toString(); 
-    output.textContent = outputObj.currentNum1; 
-    outputObj.currentNum2 = ''; 
-    outputObj.operator = '';  
     
     if (outputObj.currentNum1 === '') {  
         output.textContent = 'undefined';
@@ -105,6 +101,12 @@ equalsBtn.addEventListener('click', e => {
         output.textContent = 'undefined'; 
     } else if (outputObj.currentNum2 === '') { 
         output.textContent = 'undefined'; 
+    } else { 
+        
+        outputObj.currentNum1 = Math.round(operate(outputObj.currentNum1, outputObj.currentNum2, outputObj.operator)).toString(); 
+        output.textContent = outputObj.currentNum1; 
+        outputObj.currentNum2 = ''; 
+        outputObj.operator = '';   
     } 
     
 })  
